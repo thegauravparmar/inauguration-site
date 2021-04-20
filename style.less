@@ -16,7 +16,7 @@
   left: 0;
   margin: auto;
   transform-style: preserve-3d;
-  transition: transform 60s ease;
+  transition: transform 10s ease;
   transform-origin: -120% top;
 }
 
@@ -85,7 +85,8 @@
   color: darken(@accent, 12%);
   display: table-cell;
   z-index: 999;
-  vertical-align: middle;
+  // vertical-align: middle;
+  margin-top: 40px;
   transition: color 3s ease;
 }
 
@@ -102,12 +103,23 @@
 .wrapper {
   //   color: darken(@accent, 12%);
   //   display: table-cell;
-  //   vertical-align: middle;
+  // vertical-align: bottom;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  right: 50%;
+  text-align: center;
   //   transition: color 3s ease;
   display: none;
 }
 
 .rnOuter:hover .wrapper {
   //   color: white;
+  display: flex;
+}
+.rnOuter img {
+  display: none;
+}
+.rnOuter:hover img {
   display: flex;
 }
