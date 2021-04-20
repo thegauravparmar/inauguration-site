@@ -240,6 +240,7 @@ img {
 body {
   overflow-y: hidden;
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
 }
 
 .cta span {
