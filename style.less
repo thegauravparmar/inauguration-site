@@ -1,4 +1,4 @@
-@accent: hsl(212, 54%, 34%);
+@accent: hsl(256, 85%, 20%);
 
 .rnOuter {
   background: darken(@accent, 12%);
@@ -16,7 +16,7 @@
   left: 0;
   margin: auto;
   transform-style: preserve-3d;
-  transition: transform 6s ease;
+  transition: transform 60s ease;
   transform-origin: -120% top;
 }
 
@@ -39,7 +39,7 @@
 
 @keyframes rnUnit {
   50% {
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
   }
 }
 
@@ -77,12 +77,14 @@
 .aoTable {
   display: table;
   width: 100%;
+  z-index: 999;
   height: 100vh;
   text-align: center;
 }
 .aoTableCell {
   color: darken(@accent, 12%);
   display: table-cell;
+  z-index: 999;
   vertical-align: middle;
   transition: color 3s ease;
 }
@@ -97,15 +99,15 @@
   color: white;
 }
 
-// #app {
-//   color: darken(@accent, 12%);
-//   display: table-cell;
-//   vertical-align: middle;
-//   transition: color 3s ease;
-//   display: none;
-// }
+.wrapper {
+  //   color: darken(@accent, 12%);
+  //   display: table-cell;
+  //   vertical-align: middle;
+  //   transition: color 3s ease;
+  display: none;
+}
 
-// .rnOuter:hover #app {
-//   color: white;
-//   display: contents;
-// }
+.rnOuter:hover .wrapper {
+  //   color: white;
+  display: flex;
+}
