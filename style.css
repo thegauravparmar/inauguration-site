@@ -132,7 +132,7 @@
 }
 /* firework  */
 
-.rnOuter:hover .aoTableCell {
+.rnOuter .aoTableCell {
   background-image: url("hero-bg.gif");
   background-position: center;
   background-repeat: no-repeat;
@@ -259,10 +259,18 @@ p {
   position: absolute;
   top: 20px;
   left: 40px;
+  display: none;
 }
 .eldalogo {
   width: 150px;
   position: absolute;
   bottom: 40px;
   right: 80px;
+  display: none;
+}
+.elearnimg {
+  width: 50%;
+}
+#mainblock {
+  display: none;
 }

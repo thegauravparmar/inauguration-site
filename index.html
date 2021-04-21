@@ -15,41 +15,37 @@
 </head>
 
 <body>
+  <audio id="myAudio">
+    <source src="sound.wav" type="audio/wav">
+    <!-- <source src="horse.mp3" type="audio/mpeg"> -->
+    Your browser does not support the audio element.
+  </audio>
   <!-- partial:index.partial.html -->
   <div class="rxWorld">
     <div class="poster-img">
-      <center> <img src="main-bg.png" onclick="this.remove()" id="myimg"></center>
+      <center> <img src="main-bg.png" onclick="imgremove(this)" id="myimg"></center>
     </div>
-    <section class="rnOuter">
+    <section class="rnOuter" id="mainblock">
 
-      <section class="aoTable">
-        <div class="aoTableCell">
+      <section class="aoTable" onmouseover="displayele();">
+        <div class="aoTableCell" id="tablesec">
           <img src="logo.png" class="logo">
           <h1>Welcome To e-LDA LAB</h1>
           <br>
 
           <div class="container">
-            <h2>What is the purpose of MOOC?</h2>
-            <p>
+            <center><img src="elearning.png" class="elearnimg"></center>
 
-              MOOCs integrate social networking, accessible online resources, and are facilitated by leading
-              practitioners
-              in the field of study. <br>Most significantly, MOOCs build on the engagement of learners who self-organize
-              their
-              participation according to learning goals, prior knowledge and skills, and common interests.
-            </p>
             <br>
-            <br>
-            <br>
-            <br>
-            <h2>About e-Lda Lab</h2>
+
+            <!-- <h2>About e-Lda Lab</h2>
             <p>
               The e-LDA stands for e-Learning and Data Analytics Lab. e-LDA was founded at Indian Institute of
               Information Technology Kota in 2020. This lab largely focuses on development of Massive Open Online
               Courses (MOOCs) and learning analytic tools. Further, it aims to enhance the teaching-learning process
               with the application of data analytics and machine learning techniques on the digital data for college
               students through online mode.
-            </p>
+            </p> -->
           </div>
           <center>
             <div class="wrapper">
