@@ -7,13 +7,18 @@ function displayele() {
     count++;
   }
 }
-
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 var c = 0;
-function imgremove(prop) {
+async function imgremove(prop) {
   if (c == 0) {
     prop.remove();
     x.play();
     document.getElementById("mainblock").style.display = "block";
     console.log("done");
+
+    await sleep(3000);
+    displayele();
   }
 }
